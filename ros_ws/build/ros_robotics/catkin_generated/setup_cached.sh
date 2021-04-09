@@ -9,5 +9,6 @@
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/ros_ws/devel/.private/ros_robotics:$CMAKE_PREFIX_PATH"
 export PWD='/home/ros_ws/build/ros_robotics'
+export PYTHONPATH="/home/ros_ws/devel/lib/python3/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/ros_ws/devel/.private/ros_robotics/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/ros_ws/src/ros_robotics:$ROS_PACKAGE_PATH"

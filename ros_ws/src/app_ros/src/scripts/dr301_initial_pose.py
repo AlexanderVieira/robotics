@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import rospy
+import rospy, sys
 from geometry_msgs.msg import PoseWithCovarianceStamped
 from geometry_msgs.msg import Quaternion
 from tf.transformations import quaternion_from_euler
@@ -31,9 +31,13 @@ def talker_main(x, y, theta):
           
 if __name__ == '__main__':
         
-    initial_x = eval(input("Digite a posicao inicial no eixo X com formato 0.0: "))
-    initial_y = eval(input("Digite a posicao inicial no eixo Y com formato 0.0: "))
-    initial_theta = eval(input("Digite a rotação inicial em radianos no eixo Z: "))
+    # initial_x = eval(input("Digite a posicao inicial no eixo X com formato 0.0: "))
+    # initial_y = eval(input("Digite a posicao inicial no eixo Y com formato 0.0: "))
+    # initial_theta = eval(input("Digite a rotação inicial em radianos no eixo Z: "))
+
+    initial_x = float(sys.argv[1])   
+    initial_y = float(sys.argv[2]) 
+    initial_theta = float(sys.argv[3]) 
     
     talker_main(initial_x, initial_y, initial_theta)
     

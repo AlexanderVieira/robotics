@@ -9,6 +9,5 @@
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/ros_ws/devel/.private/rviz_visual_tools:$CMAKE_PREFIX_PATH"
 export PWD='/home/ros_ws/build/rviz_visual_tools'
-export PYTHONPATH="/home/ros_ws/devel/lib/python3/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/ros_ws/devel/.private/rviz_visual_tools/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/ros_ws/src/rviz_visual_tools:$ROS_PACKAGE_PATH"

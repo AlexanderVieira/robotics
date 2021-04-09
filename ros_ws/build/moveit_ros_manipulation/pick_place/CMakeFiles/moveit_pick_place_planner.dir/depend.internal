@@ -1797,6 +1797,7 @@ pick_place/CMakeFiles/moveit_pick_place_planner.dir/src/pick_place.cpp.o
  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 pick_place/CMakeFiles/moveit_pick_place_planner.dir/src/pick_place_params.cpp.o
+ /home/ros_ws/devel/.private/moveit_ros_manipulation/include/moveit_ros_manipulation/PickPlaceDynamicReconfigureConfig.h
  /home/ros_ws/src/moveit/moveit_ros/manipulation/pick_place/include/moveit/pick_place/pick_place_params.h
  /home/ros_ws/src/moveit/moveit_ros/manipulation/pick_place/src/pick_place_params.cpp
  /opt/ros/noetic/include/dynamic_reconfigure/BoolParameter.h
@@ -1811,6 +1812,8 @@ pick_place/CMakeFiles/moveit_pick_place_planner.dir/src/pick_place_params.cpp.o
  /opt/ros/noetic/include/dynamic_reconfigure/ReconfigureRequest.h
  /opt/ros/noetic/include/dynamic_reconfigure/ReconfigureResponse.h
  /opt/ros/noetic/include/dynamic_reconfigure/StrParameter.h
+ /opt/ros/noetic/include/dynamic_reconfigure/config_init_mutex.h
+ /opt/ros/noetic/include/dynamic_reconfigure/config_tools.h
  /opt/ros/noetic/include/dynamic_reconfigure/server.h
  /opt/ros/noetic/include/ros/advertise_options.h
  /opt/ros/noetic/include/ros/advertise_service_options.h

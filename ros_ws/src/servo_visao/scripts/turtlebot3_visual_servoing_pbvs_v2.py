@@ -15,7 +15,7 @@
 #############################################
 
 # importing libraries
-import rospy, time, sys, math, control_lib, tf
+import rospy, time, sys, math, control_lib, tf, turtlebot_move
 import numpy as np
 import control_lib_v2 as ctrl
 from geometry_msgs.msg import Pose2D, Twist, PointStamped, PolygonStamped, Point32
@@ -56,10 +56,7 @@ def callback_img_point(msg):
     global errors   
 
     blockead = False     
-
-    # recovering point
-    # u = msg.x
-    # v = msg.y
+   
     points = msg.polygon.points
     if points is not None:
         if len(points) > 0:
@@ -86,7 +83,7 @@ def callback_img_point(msg):
                         if errors[0] <= 0.1:
                             blockead = True
                             rospy.loginfo('Verificou erro.')
-                            mask_is_true = 0                       
+                            #mask_is_true = 0           
                             
 
                 if not blockead:
@@ -227,7 +224,7 @@ def control_robot():
                 control_signal = Twist()
                 control_signal.linear.x = 0.0
                 control_signal.angular.z = 0.5
-                time.sleep(0.5)               
+                #time.sleep(0.5)               
                 rospy.loginfo('ctrl: Sem mascara.') 
                 
         except:
