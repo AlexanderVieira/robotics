@@ -15,7 +15,7 @@
 #############################################
 
 # importing libraries
-import rospy, time, sys, math, control_lib, tf, turtlebot_move
+import rospy, time, sys, math, control_lib, tf
 import numpy as np
 import control_lib_v2 as ctrl
 from geometry_msgs.msg import Pose2D, Twist, PointStamped, PolygonStamped, Point32
