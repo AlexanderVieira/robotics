@@ -60,10 +60,7 @@ def callback_img_point(msg):
     points = msg.polygon.points
     if points is not None:
         if len(points) > 0:
-            # for i in range(len(points)):
-            #     u = points[i].x
-            #     v = points[i].y
-            #     mask_is_true = points[i].z
+            
             if len(points) == 1 and int(points[0].z) == 0:
                 
                 mask_is_true = int(points[0].z)
